@@ -1,2 +1,1 @@
-# alx-low_level_programming
-my first repo in the c programming 
+this is the control section in c
