@@ -1,18 +1,14 @@
-#include "main.h"
-
+#include "holberton.h"
 /**
- * _puts_recursion - write @s to stdout and add newline
- * @s: the reference to a string
+ * _print_rev_recursion - Prints a string in reverse, followed by a new line.
+ * @s: the string to be printed
+ *
  */
-void _puts_recursion(char *s)
+void _print_rev_recursion(char *s)
 {
-	if (*s)
+	if (s[0] != '\0')
 	{
-		_putchar(*s);
-		_puts_recursion(s + 1);
-	}
-	else
-	{
-		_putchar('\n');
+		_print_rev_recursion(s + 1);
+		_putchar(s[0]);
 	}
 }
